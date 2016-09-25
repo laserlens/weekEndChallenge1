@@ -46,6 +46,12 @@ $(document).ready(function () {
   $('.employee-info').on('submit',function (event) {
     event.preventDefault();//prvents page from creating a new web page
 
+    $('#result').css({
+      'padding': '5px',
+      'border': 'solid',
+      'border-color': 'red'
+    });
+
     var employee = {};//empty object
 
     var fields = $('.employee-info').serializeArray(); //turns imput into array name and value

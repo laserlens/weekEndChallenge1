@@ -109,5 +109,12 @@ th {
 #montext {
   border-bottom: solid;
   border-color: #4CAF50;
+  border-width: 10px;
+  font-size: 135%;
   font-weight: bold;
+}
+
+#result{
+
+  font-size: 125%;
 }
