@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+   <title>Weekend Challenge #1</title>
+   <script src="jquery-3.1.1.min.js" charset="utf-8"></script>
+   <script src="app.js" charset="utf-8" ></script>
+   <link rel="stylesheet" href="style.css" media="screen">
+</head>
+  <body>
+    <h1>Company Name Here</h1>
+    <h2>Employee Information</h2>
+    <form class="employee-info">
+      <label for="employee-first-name">First Name:</label>
+      <input type="text" class="emptySpace" id="employee-first-name" name="employee-first-name" />
+
+      <label for="employee-last-name">Last Name:</label>
+      <input type="text" class="emptySpace" id="employee-last-name" name="employee-last-name" />
+      <p>
+      <label for="employeeId">Employee Id</label>
+      <input type="text" class="emptySpace" id="employeeId" name="employeeId" />
+
+      <label for="jobTitle">Job Title</label>
+      <input type="text" class="emptySpace" id="jobTitle" name="jobTitle" />
+     </p>
+     <p>
+       <label for="salary">Monthly Salary $</label>
+       <input type="text" class="emptySpace" id="salary" name="salary" />
+
+      <button type="submit" id="theButton">Submit</button>
+    </p>
+    </form>
+    <div id="employee-data">
+      <h3>Employee Data</h3>
+      <table id="theData" style="width:60%">
+        <tr>
+          <th id="empName">Name</th>
+          <th id="empId">Id#</th>
+          <th id="empJobTitle">Job</th>
+          <th id="empSalary">Monthly Salary in $'s</th>
+          <th id="delEmp"> Remove Employee</th>
+        </tr>
+
+    </table>
+    </div>
+    <div id="totalSalary">
+      <h4> </h4>
+      <apan id="montext">Monthly Salary Expenditures:</h4>
+      <span id="result"></span>
+    </div>
+  </body>
+</html>

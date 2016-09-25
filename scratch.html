@@ -1,0 +1,29 @@
+<table style="width:100%">
+  <tr>
+    <th id="empName">Name</th>
+    <th id="empId">Id#</th>
+    <th id="empJobTitle">Job</th>
+    <th id="empSalary">Salary</th>
+  </tr>
+
+  <p>
+    <span id="empName">Name</span>
+    <span id="empId">Id</span>
+    <span id="empJobTitle">Job</span>
+    <span id="empSalary">Salary</span>
+  </p>
+
+  parseInt($(empSalary).val(), 10);
+  var $emp = $('<div ="salaryTotal"></div>');
+  $emp.append('<p>' + emp['salary'])
+  $('#totalSalary').append($emp);
+
+  function deleteRow(r) {
+      var i = r.parentNode.parentNode.rowIndex;
+      document.getElementById("theData").deleteRow(i);
+
+  }
+
+  value="Delete" onclick="deleteRow(this)
+
+  var value1 = document.inputForm.number1.valueAsNumber;
