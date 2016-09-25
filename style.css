@@ -65,12 +65,12 @@ input[type=text]:focus {
 
 table, th, td {
    border: 1px solid black;
+   text-align: center;
 }
 
 table {
-  width:70%;
-  margin-left:20%;
-  margin-right:20%;
+  width:60%;
+  margin: 0 auto;
 }
 
 tr:hover {
@@ -78,7 +78,7 @@ tr:hover {
 }
 
 th {
-    text-align: left;
+
     background-color: #4CAF50;
     color: white;
 }
@@ -115,6 +115,5 @@ th {
 }
 
 #result{
-
   font-size: 125%;
 }
