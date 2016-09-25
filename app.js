@@ -21,10 +21,9 @@ $(document).ready(function () {
                 });
             }
         });
-        if (isValid == false)
+        if (isValid == false) {
             e.preventDefault();
-        else
-            console.log('it worked');
+        }
     });
 
 
@@ -90,10 +89,10 @@ $(".empSal").each(function() {
   var value = $(this).text();
   // add only if the value is number
   if(!isNaN(value) && value.length >= 0) {
-      sum += parseFloat(value);
+      sum += parseInt(value);
   }
 });
-$('#result').text('$' + sum);
+$('#result').text('$' + (sum/12));
 }
 //following function on button push delete will remove tr and return calcSal function
 $("#theData").on('click', '.btnDelete', function () {
