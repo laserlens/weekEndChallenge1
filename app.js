@@ -92,7 +92,7 @@ $(".empSal").each(function() {
       sum += parseInt(value);
   }
 });
-$('#result').text('$' + (sum/12));
+$('#result').text('$' + ((sum/12).toFixed(2)));
 }
 //following function on button push delete will remove tr and return calcSal function
 $("#theData").on('click', '.btnDelete', function () {
