@@ -107,6 +107,7 @@ th {
 }
 
 #montext {
+  margin: 0;
   border-bottom: solid;
   border-color: #4CAF50;
   border-width: 10px;

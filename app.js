@@ -47,8 +47,10 @@ $(document).ready(function () {
     event.preventDefault();//prvents page from creating a new web page
 
     $('#result').css({
+      'margin': 0,
       'padding': '5px',
-      'border': 'solid',
+      'border-top': 'solid',
+      'border-bottom': 'solid',
       'border-color': 'red'
     });
 
