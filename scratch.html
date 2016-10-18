@@ -1,3 +1,15 @@
+
+worker.getTotal = function(){
+    var total = 0;
+    for(var i = 0; i < worker.employee.salary.length; i++){
+        var product = worker.employee.salary[i] + worker.employee.salary[i+1];
+        total += (product/12);
+    }
+    return total;
+}
+
+<------old mix scatch----->
+
 <table style="width:100%">
   <tr>
     <th id="empName">Name</th>

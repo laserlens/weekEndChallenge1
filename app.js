@@ -6,16 +6,36 @@ app.controller('BasicController', function () {
 
   var worker = this; // holds the value of this
   worker.employees = []; // hold all of our created cohorts
+  worker.totalSalary = 0;
 
   worker.createEmployee = function () {
-  console.log('Submitted employee ', worker.employee);
+    console.log('Submitted employee ', worker.employee);
 
-  // make a copy of object instead of storing object itself
-  worker.employees.push(angular.copy(worker.employee));
-};
+    // make a copy of object instead of storing object itself
+    worker.employees.push(angular.copy(worker.employee));
+    worker.calcSal();
+    console.log('calcSal', worker.totalSalary);
+  };
 
+  worker.Delete = function() {
+    var index = worker.employees.indexOf(item);
+    worker.employees.splice(index, 1);
+  }
 
-});
+  worker.calcSal = function () {
+    worker.totalSalary = 0
+    worker.employees.forEach(function(i) {
+      var value = parseInt(i.salary);
+      var total = worker.totalSalary;
+      worker.totalSalary = value + total;
+    });
+  }
+//worker.Delete = function (index) {
+//  console.log('whats the index', index);
+//  worker.employees.splice(worker.employee);
+//        };
+
+});//end of controller
 
 
 //old mix jquery

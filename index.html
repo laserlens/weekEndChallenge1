@@ -52,13 +52,16 @@
               {{employee.first_name}} {{employee.last_name}}:
               {{employee.employee_id}}: {{employee.job_tittle}}:
               {{employee.salary}}
+              <button class="btn" ng-click="Delete(item)">Delete</button>
             </li>
           </ul>
         </div>
         <div id="totalSalary">
           <h4> </h4>
-          <p id="montext">Monthly Salary Expenditures</p>
-          <p id="result"></p>
+          <p id="montext">Monthly Salary Expenditures:
+            <span>
+              {{(basic.totalSalary/12).toFixed(2)}}</span></p>
+
         </div>
       </selction>
     </main>
