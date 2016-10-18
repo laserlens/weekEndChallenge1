@@ -1,5 +1,25 @@
+//remix angular 1
+var app = angular.module('basicApp', []);
 
-$(document).ready(function () {
+app.controller('BasicController', function () {
+  console.log('BasicController loaded');
+
+  var worker = this; // holds the value of this
+  worker.employees = []; // hold all of our created cohorts
+
+  worker.createEmployee = function () {
+  console.log('Submitted employee ', worker.employee);
+
+  // make a copy of object instead of storing object itself
+  worker.employees.push(angular.copy(worker.employee));
+};
+
+
+});
+
+
+//old mix jquery
+/*$(document).ready(function () {
 
 // function will not allow empty input fields on click and then get your attention to the empty ones
    $('#theButton').click(function(e) {
@@ -80,7 +100,7 @@ $(document).ready(function () {
 
       $el.append('<p>' + emp['employee-first-name'] + '' + emp['employee-last-name']);
 */
-function appendDom(emp) {
+/*function appendDom(emp) {
   var $emp = $('<tr></tr>');
   $emp.append('<td>' + emp['employee-first-name'] + ' ' + emp['employee-last-name']);
   $emp.append('<td>' + emp['employeeId'])
@@ -107,4 +127,4 @@ $("#theData").on('click', '.btnDelete', function () {
     $(this).closest('tr').remove();
     calcSal();
 });
-});
+});*/

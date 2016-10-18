@@ -1,3 +1,9 @@
+<----angular remix---->
+# Goal
+  1. use no jquery
+  2. use only angular 1 to get the same results as below
+
+<-------old mix---->
 # Weekend 1 challenge
 
 Goal was to  us J-Query, html, and css to create an application.
